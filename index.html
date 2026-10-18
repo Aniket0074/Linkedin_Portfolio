@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aniket Ambulkar — Senior Solutions Engineer specializing in observability, Dynatrace, Kubernetes, and cloud infrastructure." />
+  <title>Aniket Ambulkar | Observability Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--3" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">
+      <span class="nav__logo-icon">AA</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__avatar-wrap">
+        <div class="hero__avatar-ring"></div>
+        <div class="hero__avatar">
+          <span>AA</span>
+        </div>
+        <div class="hero__orbit hero__orbit--1">
+          <div class="orbit-icon orbit-icon--k8s" title="Kubernetes">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.204 14.35l.007.01-.007-.01zM12 1.633l-1.633 2.825 1.633 2.825 1.633-2.825L12 1.633zM5.633 5.633L3.808 8.8l1.825 3.167 1.825-3.167L5.633 5.633zM18.367 5.633l-1.825 3.167 1.825 3.167 1.825-3.167L18.367 5.633zM12 16.717l-1.633 2.825L12 22.367l1.633-2.825L12 16.717zM5.633 18.367l-1.825 3.167L5.633 24.7l1.825-3.167-1.825-3.166zM18.367 18.367l1.825 3.167 1.825-3.167-1.825-3.166z"/></svg>
+          </div>
+        </div>
+        <div class="hero__orbit hero__orbit--2">
+          <div class="orbit-icon orbit-icon--cloud" title="Cloud">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+          </div>
+        </div>
+        <div class="hero__orbit hero__orbit--3">
+          <div class="orbit-icon orbit-icon--monitor" title="APM">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero__status">
+        <span class="status-dot"></span>
+        Available for opportunities
+      </p>
+      <h1 class="hero__name">
+        Aniket <span class="gradient-text">Ambulkar</span>
+      </h1>
+      <p class="hero__title">
+        Senior Solutions Engineer · Observability &amp; APM Specialist
+      </p>
+      <p class="hero__subtitle">
+        Architecting full-stack observability solutions that drive operational excellence,
+        reduce MTTR, and deliver 100% application visibility across enterprise environments.
+      </p>
+      <div class="hero__actions">
+        <a href="https://www.linkedin.com/in/aniket-ambulkar-7521a0254" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          Connect on LinkedIn
+        </a>
+        <a href="#experience" class="btn btn--ghost">View Experience</a>
+      </div>
+      <div class="hero__meta">
+        <span class="hero__meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Navi Mumbai, Maharashtra, India
+        </span>
+        <span class="hero__meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          QualityKiosk Technologies
+        </span>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="dashboard">
+        <div class="dashboard__panel dashboard__panel--chart">
+          <div class="dashboard__header">
+            <span class="dashboard__dot dashboard__dot--green"></span>
+            <span class="dashboard__dot dashboard__dot--yellow"></span>
+            <span class="dashboard__dot dashboard__dot--red"></span>
+            <span class="dashboard__title">live-apm-metrics</span>
+          </div>
+          <div class="dashboard__body">
+            <canvas id="liveChart" width="380" height="140" aria-label="Live APM metrics chart"></canvas>
+            <div class="chart-legend">
+              <span class="chart-legend__item"><i class="chart-legend__dot chart-legend__dot--cyan"></i> Response Time</span>
+              <span class="chart-legend__item"><i class="chart-legend__dot chart-legend__dot--purple"></i> Error Rate</span>
+              <span class="chart-legend__item"><i class="chart-legend__dot chart-legend__dot--green"></i> Throughput</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__row">
+          <div class="stat-card stat-card--green">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="stat-card__value" data-count="100">0</div>
+            <div class="stat-card__label">Visibility %</div>
+          </div>
+          <div class="stat-card stat-card--cyan">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-card__value" data-count="68">0</div>
+            <div class="stat-card__label">MTTR ↓ %</div>
+          </div>
+          <div class="stat-card stat-card--purple">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <div class="stat-card__value" data-count="250">0</div>
+            <div class="stat-card__suffix">+</div>
+            <div class="stat-card__label">Services</div>
+          </div>
+        </div>
+
+        <div class="dashboard__panel dashboard__panel--topology">
+          <div class="dashboard__header">
+            <span class="dashboard__title">service-topology</span>
+            <span class="topology-status"><span class="status-dot"></span> All Healthy</span>
+          </div>
+          <svg class="topology-svg" viewBox="0 0 380 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#06b6d4"/>
+                <stop offset="100%" stop-color="#8b5cf6"/>
+              </linearGradient>
+            </defs>
+            <line class="topo-line" x1="60" y1="60" x2="140" y2="30" stroke="url(#lineGrad)" stroke-width="2"/>
+            <line class="topo-line" x1="60" y1="60" x2="140" y2="90" stroke="url(#lineGrad)" stroke-width="2"/>
+            <line class="topo-line" x1="140" y1="30" x2="220" y2="60" stroke="url(#lineGrad)" stroke-width="2"/>
+            <line class="topo-line" x1="140" y1="90" x2="220" y2="60" stroke="url(#lineGrad)" stroke-width="2"/>
+            <line class="topo-line" x1="220" y1="60" x2="320" y2="60" stroke="url(#lineGrad)" stroke-width="2"/>
+            <circle class="topo-node topo-node--pulse" cx="60" cy="60" r="18" fill="#111827" stroke="#06b6d4" stroke-width="2"/>
+            <text x="60" y="64" text-anchor="middle" fill="#06b6d4" font-size="8" font-family="JetBrains Mono">API</text>
+            <circle class="topo-node" cx="140" cy="30" r="14" fill="#111827" stroke="#10b981" stroke-width="2"/>
+            <text x="140" y="34" text-anchor="middle" fill="#10b981" font-size="7" font-family="JetBrains Mono">Auth</text>
+            <circle class="topo-node" cx="140" cy="90" r="14" fill="#111827" stroke="#10b981" stroke-width="2"/>
+            <text x="140" y="94" text-anchor="middle" fill="#10b981" font-size="7" font-family="JetBrains Mono">DB</text>
+            <circle class="topo-node topo-node--pulse" cx="220" cy="60" r="16" fill="#111827" stroke="#8b5cf6" stroke-width="2"/>
+            <text x="220" y="64" text-anchor="middle" fill="#8b5cf6" font-size="7" font-family="JetBrains Mono">K8s</text>
+            <circle class="topo-node" cx="320" cy="60" r="14" fill="#111827" stroke="#ec4899" stroke-width="2"/>
+            <text x="320" y="64" text-anchor="middle" fill="#ec4899" font-size="7" font-family="JetBrains Mono">DT</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee__track">
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Dynatrace</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Kubernetes</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg> AWS</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Azure</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> GCP</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> OpenShift</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> ArgoCD</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Docker</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Dynatrace</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Kubernetes</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg> AWS</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Azure</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> GCP</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> OpenShift</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> ArgoCD</span>
+        <span class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Docker</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section__title">About Me</h2>
+          <div class="impact-strip">
+            <div class="impact-item">
+              <span class="impact-item__num" data-count="4">0</span><span class="impact-item__plus">+</span>
+              <span class="impact-item__label">Years Experience</span>
+            </div>
+            <div class="impact-item">
+              <span class="impact-item__num" data-count="50">0</span><span class="impact-item__plus">+</span>
+              <span class="impact-item__label">Projects Delivered</span>
+            </div>
+            <div class="impact-item">
+              <span class="impact-item__num" data-count="3">0</span>
+              <span class="impact-item__label">Cloud Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about__text-col">
+            <p class="about__text">
+              As a <strong>Senior Solution Engineer</strong> at QualityKiosk Technologies, I specialize in
+              architecting and delivering full-stack observability solutions that drive operational excellence
+              and proactive monitoring across enterprise environments.
+            </p>
+            <p class="about__text">
+              With a strong foundation in cloud-native infrastructure, application performance monitoring,
+              and modern DevOps practices, I bridge the gap between complex technical integrations and
+              measurable business value.
+            </p>
+          </div>
+          <div class="about__visual">
+            <svg class="about-illustration" viewBox="0 0 320 280" aria-hidden="true">
+              <defs>
+                <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+                </linearGradient>
+              </defs>
+              <rect x="20" y="20" width="280" height="240" rx="16" fill="url(#aboutGrad)" stroke="rgba(148,163,184,0.15)" stroke-width="1"/>
+              <rect x="40" y="50" width="240" height="8" rx="4" fill="rgba(6,182,212,0.4)"/>
+              <rect x="40" y="70" width="180" height="8" rx="4" fill="rgba(139,92,246,0.4)"/>
+              <rect x="40" y="90" width="210" height="8" rx="4" fill="rgba(16,185,129,0.4)"/>
+              <rect x="40" y="110" width="150" height="8" rx="4" fill="rgba(236,72,153,0.4)"/>
+              <circle cx="160" cy="180" r="50" fill="none" stroke="#06b6d4" stroke-width="3" stroke-dasharray="8 4" class="about-ring"/>
+              <circle cx="160" cy="180" r="35" fill="rgba(6,182,212,0.1)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="160" y="185" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="600" font-family="Inter">APM</text>
+              <circle cx="80" cy="180" r="8" fill="#10b981" class="about-dot"/>
+              <circle cx="240" cy="180" r="8" fill="#06b6d4" class="about-dot"/>
+              <circle cx="160" cy="120" r="8" fill="#8b5cf6" class="about-dot"/>
+              <circle cx="100" cy="230" r="8" fill="#ec4899" class="about-dot"/>
+              <circle cx="220" cy="230" r="8" fill="#f59e0b" class="about-dot"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about__highlights">
+          <div class="highlight-card">
+            <div class="highlight-card__icon highlight-card__icon--cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3>Full-Stack Observability</h3>
+            <p>Deep expertise in Dynatrace APM for distributed systems, Java microservices, and custom instrumentation.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__icon highlight-card__icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Cloud-Native & GitOps</h3>
+            <p>Kubernetes, OpenShift, and GitOps workflows with GitHub and ArgoCD for continuous delivery.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__icon highlight-card__icon--pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3>Pre-Sales Strategy</h3>
+            <p>Translating technical capabilities into business advantages through PoCs and comparative analyses.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__icon highlight-card__icon--green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Performance Engineering</h3>
+            <p>Custom metrics, multidimensional analysis, CI/CD automation across AWS, Azure, and GCP.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__logo timeline__logo--qk">QK</div>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">Present</span>
+              <h3 class="timeline__role">Senior Solutions Engineer</h3>
+              <p class="timeline__company">QualityKiosk Technologies</p>
+              <p class="timeline__desc">
+                Leading observability implementations for enterprise clients. Architecting Dynatrace-based
+                monitoring solutions, driving pre-sales technical strategy, and delivering PoC demonstrations
+                that accelerate deal progression.
+              </p>
+              <ul class="timeline__tags">
+                <li>Dynatrace</li>
+                <li>Kubernetes</li>
+                <li>Pre-Sales</li>
+                <li>GitOps</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__logo timeline__logo--hitachi">H</div>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">Previous</span>
+              <h3 class="timeline__role">Technical Engineer</h3>
+              <p class="timeline__company">Hitachi Systems India Pvt Ltd</p>
+              <p class="timeline__desc">
+                Delivered infrastructure monitoring and performance optimization solutions. Worked on
+                application performance management, system integrations, and technical support for
+                enterprise clients.
+              </p>
+              <ul class="timeline__tags">
+                <li>APM</li>
+                <li>Infrastructure</li>
+                <li>Integration</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__logo timeline__logo--hitachi">H</div>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">Earlier</span>
+              <h3 class="timeline__role">Junior Technical Engineer</h3>
+              <p class="timeline__company">Hitachi Systems India Pvt Ltd</p>
+              <p class="timeline__desc">
+                Built foundational expertise in monitoring platforms, troubleshooting production issues,
+                and supporting observability deployments for client environments.
+              </p>
+              <ul class="timeline__tags">
+                <li>Monitoring</li>
+                <li>Troubleshooting</li>
+                <li>Support</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills &amp; Technologies</h2>
+        <div class="skills-layout">
+          <div class="skills-radar-wrap">
+            <canvas id="skillsRadar" width="320" height="320" aria-label="Skills radar chart"></canvas>
+            <div class="skills-radar-labels">
+              <span style="--i:0">Observability</span>
+              <span style="--i:1">Cloud</span>
+              <span style="--i:2">DevOps</span>
+              <span style="--i:3">K8s</span>
+              <span style="--i:4">Pre-Sales</span>
+              <span style="--i:5">Java/APM</span>
+            </div>
+          </div>
+          <div class="skills-bars">
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                  Dynatrace & APM
+                </span>
+                <span class="skill-bar__pct">95%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="95" style="--color: #06b6d4"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                  Kubernetes & OpenShift
+                </span>
+                <span class="skill-bar__pct">88%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="88" style="--color: #8b5cf6"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                  AWS / Azure / GCP
+                </span>
+                <span class="skill-bar__pct">85%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85" style="--color: #10b981"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                  GitOps & CI/CD
+                </span>
+                <span class="skill-bar__pct">82%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="82" style="--color: #ec4899"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                  Java & Microservices
+                </span>
+                <span class="skill-bar__pct">80%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80" style="--color: #f59e0b"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                  Pre-Sales & PoC
+                </span>
+                <span class="skill-bar__pct">90%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90" style="--color: #06b6d4"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icons">
+          <div class="tech-icon" title="Dynatrace"><span>DT</span></div>
+          <div class="tech-icon" title="Kubernetes"><span>K8s</span></div>
+          <div class="tech-icon" title="AWS"><span>AWS</span></div>
+          <div class="tech-icon" title="Azure"><span>Az</span></div>
+          <div class="tech-icon" title="GCP"><span>GCP</span></div>
+          <div class="tech-icon" title="OpenShift"><span>OCP</span></div>
+          <div class="tech-icon" title="ArgoCD"><span>Argo</span></div>
+          <div class="tech-icon" title="Docker"><span>Dkr</span></div>
+          <div class="tech-icon" title="Java"><span>Java</span></div>
+          <div class="tech-icon" title="GitHub"><span>GH</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <h2 class="section__title">Certifications</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-card__shield cert-card__shield--dynatrace">
+              <svg viewBox="0 0 80 96" fill="none" aria-hidden="true">
+                <path d="M40 4L8 20v28c0 18 14 34 32 40 18-6 32-22 32-40V20L40 4z" fill="url(#shieldGrad1)" stroke="#06b6d4" stroke-width="2"/>
+                <defs><linearGradient id="shieldGrad1" x1="0" y1="0" x2="80" y2="96"><stop stop-color="#06b6d4" stop-opacity="0.2"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0.1"/></linearGradient></defs>
+                <text x="40" y="52" text-anchor="middle" fill="#06b6d4" font-size="22" font-weight="700" font-family="Inter">DT</text>
+              </svg>
+            </div>
+            <h3>Dynatrace Certified Associate</h3>
+            <p>Dynatrace</p>
+            <span class="cert-card__year">2023</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-card__shield cert-card__shield--aws">
+              <svg viewBox="0 0 80 96" fill="none" aria-hidden="true">
+                <path d="M40 4L8 20v28c0 18 14 34 32 40 18-6 32-22 32-40V20L40 4z" fill="url(#shieldGrad2)" stroke="#f59e0b" stroke-width="2"/>
+                <defs><linearGradient id="shieldGrad2" x1="0" y1="0" x2="80" y2="96"><stop stop-color="#f59e0b" stop-opacity="0.2"/><stop offset="1" stop-color="#ef4444" stop-opacity="0.1"/></linearGradient></defs>
+                <text x="40" y="52" text-anchor="middle" fill="#f59e0b" font-size="18" font-weight="700" font-family="Inter">AWS</text>
+              </svg>
+            </div>
+            <h3>AWS Certified</h3>
+            <p>Amazon Web Services</p>
+            <span class="cert-card__year">Certified</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-card__shield cert-card__shield--azure">
+              <svg viewBox="0 0 80 96" fill="none" aria-hidden="true">
+                <path d="M40 4L8 20v28c0 18 14 34 32 40 18-6 32-22 32-40V20L40 4z" fill="url(#shieldGrad3)" stroke="#3b82f6" stroke-width="2"/>
+                <defs><linearGradient id="shieldGrad3" x1="0" y1="0" x2="80" y2="96"><stop stop-color="#3b82f6" stop-opacity="0.2"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0.1"/></linearGradient></defs>
+                <text x="40" y="52" text-anchor="middle" fill="#3b82f6" font-size="16" font-weight="700" font-family="Inter">Azure</text>
+              </svg>
+            </div>
+            <h3>Azure Certified</h3>
+            <p>Microsoft Azure</p>
+            <span class="cert-card__year">Certified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__graphic" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+              <circle cx="100" cy="100" r="60" fill="none" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+              <circle cx="100" cy="100" r="40" fill="none" stroke="rgba(236,72,153,0.2)" stroke-width="1"/>
+              <circle cx="100" cy="100" r="20" fill="url(#contactGrad)"/>
+              <defs><radialGradient id="contactGrad"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#8b5cf6"/></radialGradient></defs>
+            </svg>
+          </div>
+          <h2 class="section__title">Let's Connect</h2>
+          <p class="contact__text">
+            Interested in observability, APM, or cloud-native infrastructure?
+            I'd love to connect and discuss how we can drive operational excellence together.
+          </p>
+          <a href="https://www.linkedin.com/in/aniket-ambulkar-7521a0254" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Message on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Aniket Ambulkar. Built with passion for observability.</p>
+      <a href="https://www.linkedin.com/in/aniket-ambulkar-7521a0254" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
